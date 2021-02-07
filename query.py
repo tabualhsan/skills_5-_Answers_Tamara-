@@ -69,6 +69,7 @@ def find_humans_by_animal_species(species):
     relationship! Also, you can pursue uniqueness in a Pythonic way --- you
     don't have to do it with pure SQLAlchemy)
     """
+    
     return Human.group_by(Animal.animal_species)
 
 if __name__ == '__main__':
